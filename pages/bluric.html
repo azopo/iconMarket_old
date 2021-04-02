@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Icon Market - Bluric</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-ul">
+          <li class="header__nav-li">
+            <a class="header__nav-link" href="../index.html">Головна</a>
+          </li>
+          <li class="header__nav-li">
+            <a class="header__nav-link" href="#!">Інструкція</a>
+          </li>
+
+          <li class="header__nav-li">
+            <a class="header__nav-link" href="#!">Список</a>
+          </li>
+          <li class="header__nav-li">
+            <a class="header__nav-link" href="#!">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__bg-pages">
+        <p class="header-bg-title badient-title">Bluric</p>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main stert -->
+
+    <main class="main">
+      <h1 class="main__title">Красивий набір іконок на кожен день</h1>
+      <div class="main__content-pages">
+        <div class="main__content-card-pages">
+          <img
+            alt="Bluric"
+            class="main__content-pic"
+            src="../img/ip/icon_pic_1-1.webp"
+          />
+        </div>
+
+        <div class="main__content-card-pages">
+          <img
+            alt="Borealis"
+            class="main__content-pic"
+            src="../img/ip/icon_pic_1-2.webp"
+          />
+        </div>
+      </div>
+      <script
+        id="widget-wfp-script"
+        src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"
+        type="text/javascript"
+      ></script>
+      <script type="text/javascript">
+        function runWfpWdgt(url) {
+          var wayforpay = new Wayforpay();
+          wayforpay.invoice(url);
+        }
+      </script>
+      <button
+        class="main__pay-btn"
+        onclick="runWfpWdgt('https://secure.wayforpay.com/button/bece317096f4c');"
+        type="button"
+      >
+        ХОЧУ
+      </button>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+
+    <footer class="footer">
+      <p class="footer__content">
+        Цей сайт було створено в рамках дипломної роботи студерта четвертого
+        курсу КНТЕУ, спеціалізації "Інженерія програмного забеспечення", Горбач
+        Олексій Юрійович
+      </p>
+    </footer>
+  </body>
+</html>
